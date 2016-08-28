@@ -2,6 +2,6 @@
   "targetRepository": "quora/parsecss",
   "description": "How quora/parseCSS works",
   "steps": [
-    "overview.md",
+    "overview.md"
   ]
 }
