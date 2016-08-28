@@ -1,8 +1,7 @@
 {
-  "targetRepository": "partyparrot/codetours-starter-kit",
-  "description": "Start here when you're making a code tour!",
+  "targetRepository": "quora/parsecss",
+  "description": "How quora/parseCSS works",
   "steps": [
-    "my-first-step.md",
-    "markdown.md"
+    "overview.md",
   ]
 }
