@@ -1,3 +1,3 @@
-# codetours-starter-kit
+# parsecss-code-tour
 
-Fork this to make a code tour!
+A CodeTour of [ParseCSS](https://github.com/quora/parsecss), open sourced by Quora. 
