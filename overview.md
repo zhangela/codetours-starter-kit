@@ -9,11 +9,11 @@ code: https://github.com/quora/parsecss/blob/74130ab715bf422779e8a8c3b43d556325f
 
 We want to specialize case 2 types of @rules: `font-face` and `keyframes`, because they are almost always critical. We use `postcss` to do most of the traversing, and push CSS styles that match `font-face` or `keyframes` onto the arrays storing a list of those rules. 
 
-<a href="https://github.com/quora/parsecss/blob/74130ab715bf422779e8a8c3b43d556325fb44b9/src/parse.js#L75-L77" id="targetRepository"><h4>split rules into individual selectors</h4>
+<a href="https://github.com/quora/parsecss/blob/74130ab715bf422779e8a8c3b43d556325fb44b9/src/parse.js#L75-L77" id="targetRepository"><h4>split rules into individual selectors</h4></a>
 
 This essentially splits `a, b {}` into `a {}` and `b {}`, unless `a` and `b` actually refer to the same classes, or don't refer to any classes. 
 
-<a href="https://github.com/quora/parsecss/blob/74130ab715bf422779e8a8c3b43d556325fb44b9/src/parse.js#L78-L93" id="targetRepository"><h4>add class-specific css to return value</h4>
+<a href="https://github.com/quora/parsecss/blob/74130ab715bf422779e8a8c3b43d556325fb44b9/src/parse.js#L78-L93" id="targetRepository"><h4>add class-specific css to return value</h4></a>
 
 For each css rule who selects classes, we append `[classNames, cssString]` to `classListCssPairs`. If that css rule doesn't apply to any classes, we append it to `globalCss` so that we can conservatively include them when we try to return critical CSS. 
 
